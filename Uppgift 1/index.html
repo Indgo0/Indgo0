@@ -1,10 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
     <head>
-        <meta charset="utf-8"/>
-        <meta name="U01" content="Online-Cv" />
+        <meta charset="utf-8">
         <title>Ahmed</title>
-        <link rel="stylesheet" href="css/style.css"/>
+        <style>
+            /*  Start Main Rulez */
+            .container {width: 1170px;margin: auto}
+            .clearfix {clear: both}
+            /* End Main Rules */
+            body {
+                width: 1250px;
+            }
+            /* Start Header */
+            .header .slider {
+                background-image:linear-gradient(to top, #b4e5f5, #608c9b, rgb(15, 29, 35));
+                height: 360px;
+            }
+            .header .slider .intro {padding-top: 100px;text-align: center;color: #FFF}
+            .header .slider .intro h1 {
+                 margin: 0 auto;
+                 font-size: 50px; 
+                 width: 600px;
+                 border-top: 4px solid #FFF;
+                 border-bottom: 4px solid #FFF;
+                 padding: 5px 0;
+                 color: #FFF
+                }
+.header .slider .intro button {
+    background: none;
+    margin-top: 30px;
+    font-size: 20px;
+    border: 2px solid #FFF;
+    font-weight: bold;
+    padding: 10px 30px;
+    color: #FFF;
+}
+.header .navbar {background-color: #252F31;color: #FFF;overflow: hidden}
+.header .navbar h2 {color: #FFF}
+.header .navbar h2 span {color: rgb(99, 190, 220)}
+.header .navbar ul {
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    float: right;
+}
+.header .navbar ul li {float: left;padding: 10px}
+.header .navbar ul li a {color: #FFF;text-decoration: none}
+.header .navbar ul li.active a,
+.header .navbar ul li a:hover {color: rgb(99, 190, 220)}
+
+/* End Header */
+
+/* Start About Me */
+
+.about-me {background-color: rgb(239, 249, 252);overflow: hidden; padding-top: 60px;}
+
+.about-me .image { width:35%;}
+
+.about-me .image img {width: 100%}
+
+.about-me .info {width: 60%}
+
+.about-me .info h2 {margin: 25px 0 20px 40px}
+
+.about-me .info>p {margin: 0 15px 10px 40px}
+
+.about-me .info .profs {overflow: hidden;margin: 15px 0 0 40px}
+
+.about-me .info .profs .contant {width: 50%;overflow: hidden}
+
+.about-me .info .profs .contant h3 {color: rgb(44, 58, 63)}
+
+.about-me .info .profs .contant .icon {width: 12%;margin-right: 5%}
+
+.about-me .info .profs .contant .icon img {max-width: 100%;margin: 40px 10px 0 0}
+
+.about-me .info .profs .contant .text {width: 83%}
+
+.about-me .info .profs .contant .text p {margin-top: 10px}
+
+.about-me .info .profs .contant .text h3 {margin-bottom: 5px}
+
+/* End About Me */
+
+/* Start My Skills */
+
+.my-skills{ padding-top: 30px; padding-bottom: 50px; overflow: hidden }
+.my-skills .skills, .my-skills .progress { width: 50% }
+.my-skills .skills h2 { margin: 25px 0 20px 40px }
+.my-skills .skills p { margin: 0 0 10px 40px }
+.my-skills .skills p:last-of-type { margin-top: 25px }
+.my-skills .skills button { margin-left: 40px; margin-top: 20px }
+.my-skills .progress .tech { margin-left: 50px }
+.my-skills .progress .tech div { background-color: #F2F2F2; height: 25px }
+.my-skills .progress .tech div span {
+    background-color: rgb(99, 190, 220); 
+    height: 25px; display: block; 
+    line-height: 25px; text-align: right; 
+    color: #FFF; 
+    font-weight: bold
+}
+
+
+/* End My Skills */
+
+/* Start Resume */
+
+.resume { background-color:  rgb(239, 249, 252); padding-top: 50px;padding-bottom: 70px; text-align: center }
+
+.resume h2 { font-weight: bold }
+
+.resume p { padding: 0 40px }
+
+.resume button { margin-top: 15px }
+
+/* End My Resume */
+
+/* Start My Education */
+
+.my-education{ padding-top: 30px; padding-bottom: 30px; overflow: hidden }
+
+.my-education .main{ width: 50%; margin-right: 5% }
+
+.my-education .main h2 { margin: 25px 0 20px 40px }
+
+.my-education .main p { margin: 0 0 10px 40px }
+.my-education .main > iframe { margin: 100px 15px 0 35px;}
+
+.my-education .main p:last-of-type { margin-top: 25px }
+
+.my-education .exp{ width: 45% }
+
+.my-education .exp h3 { margin-top: 80px; margin-bottom: 10px }
+
+.my-education .exp span { display: block; margin-bottom: 10px }
+
+.my-education .exp span:first-of-type { color: #666 }
+
+.my-education .exp span:last-of-type {
+    background-color:rgb(99, 190, 220);
+    color: #FFF ;
+    display: inline-block; 
+    padding: 4px 10px
+}
+
+.my-education .exp hr { margin: 20px 0; background-color: rgb(24, 49, 58); height: 1px; border: 0 }
+.my-education .main > table { padding-left: 30px; padding-top: 15px; height: 300px; text-align: center;}
+.my-education .main > table th:nth-child(even),td:nth-child(even) {
+    background-color: rgb(214, 243, 252);
+  } 
+
+/* End My Education */
+
+
+/* Start Testimonials */
+
+.testi {
+    background-color:  rgb(239, 249, 252);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.testi q {
+    line-height: 1.8;
+    color: rgb(67, 100, 110);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, Tahoma
+}
+
+.testi h3 {margin-bottom: 30px}
+.testi ul {list-style: none;padding-left: 0;text-align: center}
+.testi ul li {
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(99, 190, 220);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.testi ul li.active {background-color: rgb(99, 190, 220)}
+.testi ul li:hover {background-color: rgb(99, 190, 220)}
+
+/* End Testimonials */
+
+/* Start Portfolio */
+
+.portofolio {padding-top: 50px;padding-bottom: 70px; text-align: center}
+.portofolio p {margin-bottom: 30px}
+.portofolio .my-work {overflow: hidden; width: 100%;}
+.portofolio .my-work > div {float: left;margin-bottom: 10px; }
+.portofolio .my-work > table { background-color:  rgb(239, 249, 252); width: 33.33%; }
+.portfolio .my-work > div img {
+    width: 92%;
+    margin: 10px;
+    padding: 3px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+}
+
+/* End Portfolio */
+
+/* Start Contact Me */
+
+.contact {
+    background-color: #252F31;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.contact .info {width: 50%;margin-right: 5%}
+
+.contact h2 {color: #FFF;margin-left: 40px}
+
+.contact p {color: #6A6E71;margin-left: 40px;}
+
+.contact p strong {color: #D1D6DA}
+
+.contact .form {width: 45%;}
+
+.contact .form label {display: block;color: #D1D6DA;margin: 10px 0}
+
+.contact .form input[type="text"] {
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+}
+.contact .form textarea {
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+    height: 300px;
+}
+.contact .form input[type="submit"] {
+    background-color: #191E22;
+    color: #FFF;
+    padding: 10px 20px;
+    border: 0;
+    margin-top: 10px;
+}
+/* End Contact Me */
+
+/* Start Footer */
+.footer { background-color: #191E22; color: #787C7F; padding: 20px 0; text-align: center }
+.footer p { float: left;}
+.footer ul { list-style: none; padding-left: 0; margin: 10px 0 0 }
+.footer ul li { display: inline-block }
+.footer ul li img { width: 24px }
+/* End Footer */
+
+/* Start My Framework */
+
+.my-button {
+    background: none;
+    border: 3px solid rgb(99, 190, 220);
+    padding: 10px 30px;
+    color: rgb(99, 190, 220);
+    font-weight: bold
+}
+
+.fl-left {float: left} /* Floating Element Left */
+
+p {line-height: 1.7;color: rgb(24, 49, 58)}
+
+h2, h3 {color: rgb(24, 49, 58)}
+
+.text-center {text-align: center}
+
+/* End My Framework */
+
+        </style>   
     </head>
     <body>
         
@@ -14,7 +288,7 @@
             <div class="slider">
                 <div class="container">
                     <div class="intro">
-                        <h2>Fullstack Webbutvecklare</h2>
+                        <h1>Fullstack Webbutvecklare</h1>
                         <button>Learn More</button>
                     </div>
                 </div>    
@@ -24,42 +298,18 @@
                 <h2 class="fl-left">In<span>dgo</span></h2>
                 <ul>
                     <li class="fl-left"><a href="#">Home</a></li>
-                    <li class="fl-left"><a href="#">About Me</a></li>
-                    <li class="fl-left"><a href="#">Skills</a></li>
-                    <li class="fl-left"><a href="#">Resume</a></li>
-                    <li class="fl-left"><a href="#">Testimonials</a></li>
-                    <li class="fl-left"><a href="#">portfolio</a></li>
-                    <li class="fl-left"><a href="#">Contact Me</a></li>
+                    <li class="fl-left"><a href="#about" title="go to about">About Me</a></li>
+                    <li class="fl-left"><a href="#skills" title="go to skills">Skills</a></li>
+                    <li class="fl-left"><a href="#resume" title="go to resume">Resume</a></li>
+                    <li class="fl-left"><a href="#testimonials" title="go to testimonials">Testimonials</a></li>
+                    <li class="fl-left"><a href="#portfolio" title="go to portfolio">Portfolio</a></li>
+                    <li class="fl-left"><a href="#contact" title="go to contact">Contact Me</a></li>
                 </ul>
             </div>
             </div>    
         </div>
         
         <!-- End Header -->
-        
-        <!-- Start Features -->
-        
-        <div class="features">
-            <div class="container">
-                <div class="feat fl-left">
-                    <h2>Values</h2>
-                    <p>Values Values Values Values Values Values Values Values Values Values Values
-                    Values Values Values Values Values Values Values</p>
-                </div>
-                <div class="feat fl-left">
-                    <h2>Goals</h2>
-                    <p>Goals Goals Goals Goals Goals Goals Goals Goals Goals Goals Goals Goals Goals
-                    Goals Goals Goals Goals Goals Goals Goals Goals</p>
-                </div>
-                <div class="feat fl-left">
-                    <h2>Hobbies</h2>
-                    <p>Hobbies Hobbies Hobbies Hobbies Hobbies Hobbies Hobbies Hobbies Hobbies Hobbies
-                    Hobbies Hobbies Hobbies Hobbies Hobbies</p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- End Features -->
         
         <!-- Start About Me -->
         
@@ -69,9 +319,9 @@
                     <img src="css/IND.png" alt="Ahmed Omar">
                 </div>
                 <div class="info fl-left">
-                    <h2>About Me</h2>
-                    <p>ِAhmed Omar heter jag ursprungligen kommer från Eritrea och bor i Stockholm. Jag växte upp, gick i skolan och arbetade på flera olika geografiska ställen. Jag har en stor passion för modern teknik och programmering samt  tror på att konstant lärande är det bästa sättet att finslipa färdigheter.</p>
-                    <p>About Me About Me About Me About Me About Me About Me About Me About Me About Me About Me About Me About Me </p>
+                    <h2 id="about">About Me</h2>
+                    <p>Ursprungligen kommer jag ifrån Eritrea men bor i Stockholm. Jag växte upp, gick i skolan och arbetade på flera olika geografiska ställen. Jag har en stor passion för modern teknik och programmering samt  tror på att konstant lärande är det bästa sättet att finslipa färdigheter.</p>
+                    <p>Här kan ni läsa om de främsta rollen jag hade haft under min karriär </p>
                     <div class="profs">
                         <div class="content fl-left">
                             <div class="icon fl-left">
@@ -79,34 +329,34 @@
                             </div>
                             <div class="text fl-left">
                                 <h3>Fullstack Webbutvecklare</h3>
-                                <p>Web Design Web Design Web Design Web Design Web Design</p>
+                                <p>Junior Webbutvecklare</p>
                             </div>
                         </div>
                         <div class="content fl-left">
                             <div class="icon fl-left">
-                                <img src="css/9266901_staff training_teaching_education_teacher_icon.png" alt="Lärare vikare">
+                                <img src="css/teacher_icon.png" alt="Lärare vikare">
                             </div>
                             <div class="text fl-left">
                                 <h3>Lärare vikarie</h3>
-                                <p>Graphic Design Graphic Design Graphic Design Graphic Design</p>
+                                <p>Täcker upp för ordinarie lärares frånvaro</p>
                             </div>
                         </div>
                         <div class="content fl-left">
                             <div class="icon fl-left">
-                                <img src="css/building_healthcare_hospital_medical_nursing_icon.png" alt="Undersöterska">
+                                <img src="css/care_icon.png" alt="Undersöterska">
                             </div>
                             <div class="text fl-left">
                                 <h3>Undersköterska</h3>
-                                <p>Online Marketing Online Marketing Online Marketing Online Marketing</p>
+                                <p>Trygghetslarm insatser med tekniska ansvar</p>
                             </div>
                         </div>
                         <div class="content fl-left">
                             <div class="icon fl-left">
-                                <img src="../tagr/css/delivery_fast_quick_truck_logistics_icon.png" alt="Logistik">
+                                <img src="css/logistics_icon.png" alt="Logistik">
                             </div>
                             <div class="text fl-left">
                                 <h3>Logistik medarbetare</h3>
-                                <p>Seo Seo Seo Seo Seo Seo Seo Seo Seo Seo Seo Seo Seo</p>
+                                <p>Förrådservice med lagerhållning och distribution av sterila förbrukningsartiklar</p>
                             </div>
                         </div>
                     </div>
@@ -121,7 +371,7 @@
         <div class="my-skills">
             <div class="container">
                 <div class="skills fl-left">
-                    <h2>My Skills</h2>
+                    <h2 id="skills">My Skills</h2>
                     <p>My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills </p>
                     <p>My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills </p>
                     <button class="my-button">Contact Me</button>
@@ -161,8 +411,8 @@
         
         <div class="resume">
             <div class="container">
-                <h2>Resume</h2>
-                <p>Här kan du hämta ner mitt senast uppdaterad Cv. Den ger en över blick på min karriärs samt utbildnings bakgrund</p>
+                <h2 id="resume">Resume</h2>
+                <p>Här kan ni hämta ner mitt senast uppdaterad Cv</p>
                 <button class="my-button">Download Resume</button>
             </div>
         </div>
@@ -175,9 +425,9 @@
             <div class="container">
                 <div class="main fl-left">
                     <h2>My Education</h2>
-                    <p>My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills </p>
-                    <p>My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills My Skills </p>
-                    <table style="width:75%;"> <!--this is Table # 1-->
+                    <p>Att resa runt under mitt liv hade lärt mig många positiva saker och hade gjort att jag lätt kan sätta mig i varierande situationer. Dessutom kunde jag lära mig flera språk samt andra tekniska färdigheter </p>
+                    <p> </p>
+                    <table style="width:75%;">        <!--this is Table # 1-->
                         <tr>
                             <th>Språk</th>
                             <th>Kunskapsnivå</th>
@@ -199,15 +449,15 @@
                 <div class="exp fl-left">
                     <div class="certificate">
                          <h3>Fullstack Webbutvecklare</h3>
-                         <span><strong>Chas Academy</strong> / augusti 2022 / juni 2024</span>
-                         <span>YH-utbildning</span>
+                         <span><strong>Chas Academy, YH-utbildning</strong> / augusti 2022 / juni 2024</span>
+                         <span>Stockholm, Svergie</span>
                          <hr>
-                         <p>På utbildningen lär jag mig om HTML & CSS, JavaScript, Backendutveckling, Programmeringsmetodik och  UX </p>
+                         <p>HTML & CSS, JavaScript, Backendutveckling, Programmeringsmetodik och  UX </p>
                     </div>
                     <div class="certificate">
                          <h3>Vård-och omsorgsutbildning</h3>
-                         <span><strong>Astar skola</strong> /  2017 /  2020</span>
-                         <span>Vuxengymnasium</span>
+                         <span><strong>Astar skola, Vuxengymnasium</strong> /  2017 /  2020</span>
+                         <span>Västerås, Svergie</span>
                          <hr>
                          <p>Totalt 2400 gymnasiepoäng med inriktning äldreomsorg.</p>
                     </div>
@@ -216,11 +466,12 @@
                 <hr>
                 <div class="main fl-left">
                     <h2>Work Experience</h2>
-                    <p>Work Experience Work Experience Work Experience Work Experience Work Experience Work Experience Work Experience Work Experience Work Experience Work Experience Work Experience Work Experience</p>
-                    <p>Work Experience Work Experience Work Experience Work Experience Work ExperienceWork ExperienceWork ExperienceWork ExperienceWork Experience</p>
-                    <video controls width="450" height="300" autoplay muted> <!--this is my video-->
-                        <source src="../tagr/css/WIN_20221011_12_32_13_Pro.mp4" type="video/mp4">
-                    </video>
+                    <p>Här hittar ni de senaste jobb som jag hade haft plus de som jag har idag</p>
+                    <p></p>
+                        <iframe width="450" height="350"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+                    </iframe>
+                
                 </div>
                 <div class="exp fl-left">
                     <div class="certificate">
@@ -228,7 +479,7 @@
                          <span><strong>Indgo Company</strong> / May 2022</span>
                          <span>Stockholm, Svergie</span>
                          <hr>
-                         <p>Junior Designer Junior Designer Junior Designer Junior Designer Junior Designer Junior Designer Junior Designer Junior Designer Junior Designer Junior Designer Junior Designer</p>
+                         <p>Junior wedesigner i Indgo Company</p>
                     </div>
                     <div class="certificate">
                          <h3>Försörjningstekniker</h3>
@@ -242,7 +493,8 @@
                          <span><strong>Vikarieförmedling BUF, Västerås stad</strong> /  2018 - / 2020</span>
                          <span>Västerås, Svergie</span>
                          <hr>
-                         <p>Web Developer Web Developer Web Developer Web Developer Web DeveloperWeb Developer Web Developer Web Developer Web Developer Web Developer Web Developer Web Developer</p>
+                         <p>Jag hoppade runt i olika skolformer i Västerås kommun där det behövdes 
+                            personal för att täcka upp för ordinarie lärares frånvaro</p>
                     </div>
                 </div>
             </div>
@@ -254,7 +506,7 @@
         
         <div class="testi">
             <div class="container">
-                <q>Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials </q>
+                <q id="testimonials">Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials Testimonials </q>
                 <h3>Ahmed Indgo</h3>
                 <ul>
                     <li></li>
@@ -271,15 +523,15 @@
         
         <div class="portofolio">
             <div class="container">
-                <h2>Portofolio</h2>
+                <h2 id="portfolio">Portofolio</h2>
                 <p>Här kan ni titta på mina gammla projekt</p>
                 <div class="my-work">
                     <table>                                                  <!-- this is table # 2-->
                         <tr>
-                            <th><img src="css/pro3.png" alt="portofolio img"></th>
-                            <th><img src="css/pro2.png" alt="portofolio img"></th>
-                            <th><img src="css/pro3.png" alt="portofolio img"></th>
-                          </tr>
+                            <th><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYJsp-LN6UHM4iNtx20jMisAl6hDuXXMPrQ&usqp=CAU" alt="projekt 1"></th>
+                            <th><img src="https://static.wixstatic.com/media/2cd43b_baec20d09b1f4d41bd84fcf014019f20~mv2.png" alt="projekt 2"></th>
+                            <th><img src="https://www.publicdomainpictures.net/pictures/330000/nahled/portrait-cat-1587035666OjA.jpg" alt="projekt 3"></th>
+                        </tr>
                 </table>
                 </div>
             </div>
@@ -292,7 +544,7 @@
         <div class="contact">
             <div class="container">
                 <div class="info fl-left">
-                    <h2>Contact Me</h2>
+                    <h2 id="contact">Kontakta oss</h2>
                     <p>Ni kan alltid skicka till adressen som anges nedan. Ni kan också skicka till mailet nedan eller  fylla i kontaktformuläret. Jag uppskatter att ni följer mig  på sociala nätverk via länkarna längst ner på skärmen.</p>
                     <p>
                         Välljärnsgatan 438<br>
@@ -322,12 +574,19 @@
         <!-- Start Footer -->
         
         <div class="footer">
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                    </a>
+                </p>
             <div class="container">
                 <span>Copyright &copy; 2022 All Right Reserved To Indgo &reg; Team</span>
                 <ul>
-                    <li><a href="https://www.facebook.com" target="_blank"><img src="css/facebook_logo_media_popular_icon.png" alt="Facebook"></a></li>
-                    <li><img src="css/twitter_twitter logo_icon.png" alt="twitter"></li>
-                    <li><img src="css/linkedin_logo_social_social media_icon.png" alt="linkedin"></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/various-icons-2/476/Facebook.png" alt="Min Facebook"></a></li>
+                    <li><a href="https://twitter.com" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/002/534/045/original/social-media-twitter-logo-blue-isolated-free-vector.jpg" alt="Min twitter"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ahmed-omar-a53bb710b/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Min linkedin"></a></li>
                 </ul>
             </div>
         </div>
